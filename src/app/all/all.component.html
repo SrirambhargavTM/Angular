@@ -1,0 +1,17 @@
+<h3>Shopping Cart</h3>
+<table border="1">
+    <thead>
+        <tr>
+            <td>Product Name</td>
+            <td>Product Description</td>
+            <td>Product Image</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let prod of allProducts; let counter = index">
+            <td>{{prod.Prod_name}}</td>
+            <td>{{prod.Prod_desc}}</td>
+            <td>{{prod.Prod_img}}</td>
+        </tr>
+    </tbody>
+</table>
